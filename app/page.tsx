@@ -139,6 +139,7 @@ function LinkCard({
 
 interface Data {
   name: string;
+  role: string;
   avatar: string;
   links: Link[];
   socials: Social[];
@@ -158,6 +159,7 @@ interface Social {
 export default async function HomePage() {
   const data: Data ={
     name: 'Alex Casassovici',
+    role: 'Founder of Azarus',
     avatar: 'https://avatars.githubusercontent.com/u/485530?v=4',
     links: [      
       {
@@ -187,7 +189,7 @@ export default async function HomePage() {
       },
       {
         href: 'https://azarus.io',
-        title: 'Founder of Azarus',
+        title: 'Azarus',
         image: 'https://azarus.io/favicon.ico',
       },
     ],
@@ -206,6 +208,7 @@ export default async function HomePage() {
         height={96}
       />
       <h1 className="font-bold mt-4 mb-8 text-xl text-white">{data.name}</h1>
+      <h2 className="font-semibold text-lg text-white">{data.role}</h2>
       {data.links.map((link) => (
         <LinkCard key={link.href} {...link} />
       ))}
