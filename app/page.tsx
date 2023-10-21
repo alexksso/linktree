@@ -183,6 +183,11 @@ export default async function HomePage() {
         image: 'https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico',
       },
       {
+        href: 'https://www.linkedin.com/in/zatmonkey',
+        title: 'LinkedIn',
+        image: 'https://www.linkedin.com/favicon.ico',
+      },
+      {
         href: 'https://zatmonkey.com',
         title: 'Personal Homepage',
         image: 'https://zatmonkey.com/favicon.ico',
