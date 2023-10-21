@@ -207,8 +207,8 @@ export default async function HomePage() {
         width={96}
         height={96}
       />
-      <h1 className="font-bold mt-4 mb-8 text-xl text-white">{data.name}</h1>
-      <h2 className="font-semibold text-lg text-white">{data.role}</h2>
+      <h1 className="font-bold mt-4 mb-1 text-xl text-white">{data.name}</h1>
+      <h2 className="font-semibold text-lg text-white  mb-8">{data.role}</h2>
       {data.links.map((link) => (
         <LinkCard key={link.href} {...link} />
       ))}

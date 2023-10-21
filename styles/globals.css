@@ -17,3 +17,6 @@ body {
     hsl(287deg 84% 36%) 100%
   );
 }
+.text-xl {
+  font-size: 2rem;
+}
