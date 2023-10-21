@@ -53,6 +53,54 @@ function GitHubIcon() {
   );
 }
 
+function LinkedInIcon() {
+  return (
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clipPath="url(#clip0_9914_10)">
+        <path
+          d="M20.25 0H3.75C1.677 0 0 1.677 0 3.75V20.25C0 22.323 1.677 24 3.75 24H20.25C22.323 24 24 22.323 24 20.25V3.75C24 1.677 22.323 0 20.25 0ZM7.5 19.5H4.5V9H7.5V19.5ZM6 7.5C4.677 7.5 3.75 6.573 3.75 5.25C3.75 3.927 4.677 3 6 3C7.323 3 8.25 3.927 8.25 5.25C8.25 6.573 7.323 7.5 6 7.5ZM19.5 19.5H16.5V13.5C16.5 12.573 16.5 11.25 14.25 11.25C12 11.25 12 12.573 12 13.5V19.5H9V9H12V10.5C12.75 9.75 14.25 9.75 15 10.5V9H18L19.5 9V19.5Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_9914_10">
+          <rect width="24" height="24" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
+function InstagramIcon() {
+  return(
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <g clipPath="url(#clip0_9914_10)">
+        <path
+          d="M12 0C8.686 0 7.5 0.375 6.375 0.75C5.25 1.125 4.125 2.25 3 3.375C1.875 4.5 0.75 5.625 0.375 6.75C0 7.875 0 9.063 0 12C0 14.937 0 16.125 0.375 17.25C0.75 18.375 1.875 19.5 3 20.625C4.125 21.75 5.25 22.875 6.375 23.25C7.5 23.625 8.686 24 12 24C15.313 24 16.5 23.625 17.625 23.25C18.75 22.875 19.875 21.75 21 20.625C22.125 19.5 23.25 18.375 23.625 17.25C24 16.125 24 14.937 24 12C24 9.063 24 7.875 23.625 6.75C23.25 5.625 22.125 4.5 21 3.375C19.875 2.25 18.75 1.125 17.625 0.75C16.5 0.375 15.313 0 12 0ZM12 3.75C13.762 3.75 15.188 5.188 15.188 7.125C15.188 9.063 13.762 10.5 12 10.5C10.238 10.5 8.812 9.063 8.812 7.125C8.812 5.188 10.238 3.75 12 3.75ZM18.75 20.25C18.75 20.625 18.375 21 18 21H6C5.625 21 5.25 20.625 5.25 20.25V12C5.25 11.625 5.625 11.25 6 11.25H18C18.375 11.25 18.75 11.625 18.75 12V20.25ZM21 8.25C21 8.625 20.625 9 20.25 9H19.5C19.125 9 18.75 8.625 18.75 8.25V7.5C18.75 7.125 19.125 6.75 19.5 6.75H20.25C20.625 6.75 21 7.125 21 7.5V8.25Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_9914_10">
+          <rect width="24" height="24" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  )
+}
+
+
 function LinkCard({
   href,
   title,
@@ -108,12 +156,44 @@ interface Social {
 }
 
 export default async function HomePage() {
-  const data: Data | undefined = await get('linktree');
-
-  if (!data) {
-    // not working yet https://github.com/vercel/next.js/issues/44232
-    redirect('https://linktr.ee/selenagomez');
+  const data: Data ={
+    name: 'Alex Casassovici',
+    avatar: 'https://avatars.githubusercontent.com/u/485530?v=4',
+    links: [      
+      {
+        href: 'https://t.me/zatmonkey',
+        title: 'Telegram',
+        image: 'https://telegram.org/favicon.ico',
+      },
+      {
+        href: 'https://wa.me/15304815776',
+        title: 'Whatsapp',
+        image: '/whatsapp.png',
+      },	 
+      {
+        href: 'https://twitter.com/zatmonkey',
+        title: 'Twitter (X)',
+        image: 'https://abs.twimg.com/favicons/twitter.ico',
+      },
+      {
+        href: 'https://www.instagram.com/zatmonkey',
+        title: 'Instagram',
+        image: 'https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico',
+      },
+      {
+        href: 'https://zatmonkey.com',
+        title: 'Personal Homepage',
+        image: 'https://zatmonkey.com/favicon.ico',
+      },
+      {
+        href: 'https://azarus.io',
+        title: 'Founder of Azarus',
+        image: 'https://azarus.io/favicon.ico',
+      },
+    ],
+    socials: [],
   }
+
 
   return (
     <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8">

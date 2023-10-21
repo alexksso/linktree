@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['pbs.twimg.com'],
+    domains: ['avatars.githubusercontent.com', 'zatmonkey.com', 'www.instagram.com', 'abs.twimg.com', 'telegram.org', 'www.whatsapp.com', 'azarus.io'],
   },
 };
 
