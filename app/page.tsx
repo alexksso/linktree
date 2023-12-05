@@ -171,7 +171,12 @@ export default async function HomePage() {
         href: 'https://wa.me/15304815776',
         title: 'Whatsapp',
         image: '/whatsapp.png',
-      },	 
+      },
+      { //text message me
+        href: 'sms:15304815776?body=Hi%20Alex!%20This%20is%20...',
+        title: 'Text Message',
+        image: '/sms.webp',
+      }, 
       {
         href: 'https://twitter.com/zatmonkey',
         title: 'Twitter (X)',
@@ -197,6 +202,11 @@ export default async function HomePage() {
         title: 'Azarus',
         image: 'https://azarus.io/favicon.ico',
       },
+      {
+        href: 'https://www.lucid-crypto.com',
+        title: 'Lucid Crypto',
+        image: '/lucid.jpg',
+      }
     ],
     socials: [],
   }
