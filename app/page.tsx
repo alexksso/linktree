@@ -191,6 +191,10 @@ export default async function HomePage() {
         href: 'https://www.linkedin.com/in/zatmonkey',
         title: 'LinkedIn',
         image: 'https://www.linkedin.com/favicon.ico',
+      },{
+        href: 'https://discordapp.com/users/398330043375550470',
+        title: 'Discord',
+        image: 'https://discord.com/assets/2c21aeda16de354ba5334551a883b481.png',
       },
       {
         href: 'https://zatmonkey.com',
