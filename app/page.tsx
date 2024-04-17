@@ -207,9 +207,9 @@ export default async function HomePage() {
         image: 'https://azarus.io/favicon.ico',
       },
       {
-        href: 'https://www.lucid-crypto.com',
-        title: 'Lucid Crypto',
-        image: '/lucid.jpg',
+        href: 'https://www.golucid.io',
+        title: 'Lucid Invest',
+        image: '/golucid.png',
       }
     ],
     socials: [],
