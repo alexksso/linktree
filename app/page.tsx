@@ -194,7 +194,7 @@ export default async function HomePage() {
       },{
         href: 'https://discordapp.com/users/398330043375550470',
         title: 'Discord',
-        image: 'https://discord.com/assets/2c21aeda16de354ba5334551a883b481.png',
+        image: '/discord.png',
       },
       {
         href: 'https://zatmonkey.com',
